@@ -5,13 +5,13 @@ using namespace std;
 
 int main(){
     double units;
-    double totalBill = 0.0;
+    double totalBill;
 
     cout<< "Electricity units consumed: ";
     cin>> units;
 
     if(units <= 50){
-        totalBill = units * 5.32;
+        totalBill = units * 5.32;// units x rate
     }
     else if(units <= 75){
         totalBill = (50 * 5.32) + ((units - 50) * 6.18);
